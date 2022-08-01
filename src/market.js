@@ -22,14 +22,14 @@ function Market() {
         return (
           <>
             <div className="container">
-              <p>
+              <p className="col-sm-2 img-api">
                 <img className="img" src={coin.image}></img>
               </p>
-              <p>{coin.id} </p>
+              <p className="col-sm-2">{coin.id} </p>
 
               {/* <p> Rs. {coin.market_cap}</p> */}
-              <p>Rs. {coin.current_price} </p>
-              <p>{coin.price_change_percentage_24h}</p>
+              <p className="col-sm-2">Rs. {coin.current_price} </p>
+              <p className="col-sm-2">{coin.price_change_percentage_24h}</p>
             </div>
           </>
         );
